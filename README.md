@@ -1,24 +1,39 @@
 # Eii Thy Store
 
-A Khmer/English gaming storefront focused on clear package selection and a simple cart checkout.
+**A Khmer/English gaming storefront with a checkout that keeps the selected package and player details together.**
 
-**[Visit the live site](https://eiithystore.com)**
+[Visit the live store](https://eiithystore.com) · [Customer journey](docs/customer-journey.md) · [Project status](docs/project-status.md)
 
-## Highlights
-- Responsive game catalog and package cards
-- Green selection and completion indicators
-- Player details carried from the cart into checkout
-- Crypto QR payment instructions displayed within checkout
-- Clear separation of purchasable products and preview-only items
-- Customer order tracking and manual fulfillment workflow
+## What it does
+
+Customers browse game packages, enter their player details, and review their cart. Eligible purchases show crypto payment instructions within checkout. The store owner verifies payment before manually fulfilling the order.
+
+| Experience | Implemented behavior |
+| --- | --- |
+| Product selection | Game cards, package selection, and green completion indicators |
+| Cart | Player details carry forward; unavailable packages are clearly excluded |
+| Payment instructions | QR code, receiving network, exact amount, and expiry appear inline |
+| Order tracking | Signed-in customers can view their order status |
+| Fulfillment | Owner review and manual delivery; transaction submission is not payment confirmation |
+| Languages | Khmer and English storefront navigation and shopping content |
+
+## Design decisions
+
+- Keep one primary add-to-cart action instead of repeated review panels and buttons.
+- Show completion within the relevant section rather than a duplicate step bar.
+- Keep real purchases distinct from preview-only packages and test-payment tools.
+- Retain customer selections throughout checkout instead of asking for them again.
 
 ## Technologies
-React, TypeScript, Vite/Vinext, Cloudflare Workers, D1 and Drizzle.
 
-## Project status
-Actively developed. Supported crypto purchases use manual payment verification and delivery. Some catalog entries and payment methods remain previews. The site itself lists current availability.
+React · TypeScript · Vite/Vinext · Cloudflare Workers · D1 · Drizzle
 
-## About this repository
-This is a public portfolio overview, not an open-source release. Implementation, payment configuration, customer data, voucher codes and production media are kept out of this repository.
+## Current status
 
-Game names belong to their respective owners. This independent store is not affiliated with game publishers.
+Actively developed. Supported crypto purchases use manual verification and fulfillment. Some catalog entries and payment methods remain previews. See the live store for current availability; this repository does not promise supplier stock or automatic delivery.
+
+## Repository boundaries
+
+This is a documentation-only portfolio showcase. Source code, payment configuration, customer records, voucher codes, credentials, and production artwork are not published here. The implementation is maintained separately in a private repository.
+
+Game names belong to their respective owners. Eii Thy Store is independent and is not affiliated with game publishers.
