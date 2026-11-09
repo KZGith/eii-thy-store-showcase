@@ -6,6 +6,8 @@
 - Khmer/English shopping interface
 - Single bottom-bar add-to-cart action
 - Section-level completion checks
+- Shared crypto pricing on package cards, selection summary and checkout
+- Explicit preview-only labels and separate crypto totals
 - Inline crypto checkout for supported products
 - Server-calculated invoice amounts and expiring payment details
 - Customer order tracking and owner review tools
@@ -20,7 +22,6 @@
 
 ## Improvement priorities
 
-- Make availability and price labels consistent from browsing through checkout.
 - Keep mobile controls compact and remove repeated instructions.
 - Improve customer guidance for expired or pending payments.
 - Expand purchasable packages only after supply and pricing are confirmed.
